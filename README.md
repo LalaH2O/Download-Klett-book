@@ -1,6 +1,6 @@
 # Configure
 
-<img width="1919" height="1093" alt="image" src="https://github.com/user-attachments/assets/3016821a-700f-4dca-91a5-eebf839298ae" />
+<img width="1919" height="1093" alt="586449449-3016821a-700f-4dca-91a5-eebf839298ae" src="https://github.com/user-attachments/assets/0198bea9-c860-4157-be6a-de6a6fe8ec82" />
 Get this url for the book you want to download and set base_url to it
 
 <img width="959" height="541" alt="image" src="https://github.com/user-attachments/assets/2b2393a8-8212-4c28-9bdd-6d47ea6be13b" />
