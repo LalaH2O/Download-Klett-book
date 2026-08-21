@@ -1,9 +1,29 @@
-# Configure
+# Download Klett Book
 
-<img width="1919" height="1093" alt="586449449-3016821a-700f-4dca-91a5-eebf839298ae" src="https://github.com/user-attachments/assets/0198bea9-c860-4157-be6a-de6a6fe8ec82" />
-Get this url for the book you want to download and set base_url to it
+## 1) Install dependencies
 
-<img width="959" height="541" alt="image" src="https://github.com/user-attachments/assets/2b2393a8-8212-4c28-9bdd-6d47ea6be13b" />
-Get these cookies from the site and paste them into COOKIES
+```bash
+pip install requests pillow img2pdf
+```
 
-Set the scale value and done!
+## 2) Get values from browser
+
+- `base_url`: the URL prefix that comes before `page_X/ScaleY.png`
+- cookies: copy your browser cookies for the book page (DevTools → Application/Storage → Cookies)
+
+## 3) Run
+
+```bash
+python main.py --base-url "https://example.com/path/" --cookies '{"cookie_name":"cookie_value"}'
+```
+
+## Useful options
+
+- `--scale 4` image quality scale
+- `--max-pages 570` max pages to try
+- `--stop-after-failures 5` stop when many pages fail in a row
+- `--output combined.pdf` output file name
+- `--download-dir pages` where page images are stored
+- `--keep-images` keep PNG files after PDF is created
+
+If you skip `--base-url`, the script will ask for it interactively.
